@@ -6,6 +6,8 @@ import pandas as pd
 model = joblib.load('trained_heart_lr_model.pkl')
 
 st.title('Heart Disease Prediction')
+st.write("This app predicts the likelihood of an individual having heart disease based on their health data.")
+
 
 # Collect user input
 smoking = st.radio('Do you smoke usually?', ['Yes', 'No'])
